@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f2f2f2;
+    animation: fadeIn 2s ease-in;
+}
+
+/* Navbar */
+nav {
+    background-color: #343a40;
+    color: white;
+    padding: 15px 30px;
+    font-size: 24px;
+    font-weight: bold;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Main prediction card */
+.main-card {
+    background: white;
+    padding: 30px;
+    max-width: 500px;
+    margin: 30px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+    animation: slideUp 1s ease-out;
+}
+
+input[type="file"] {
+    margin: 20px 0;
+    animation: fadeIn 1s ease-in;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    animation: bounce 1s infinite alternate;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#result {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Info section */
+.info-section {
+    text-align: center;
+    margin: 50px 20px;
+    animation: fadeIn 1s ease-in;
+}
+
+.info-section h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+.info-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.card {
+    background-color: #af9b9b;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: left;
+    animation: fadeIn 1s ease-in;
+}
+
+/* Links section */
+.links-section {
+    text-align: center;
+    margin: 50px 20px;
+    animation: fadeIn 1s ease-in;
+}
+
+.links-section h2 {
+    margin-bottom: 20px;
+}
+
+.links a {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.links a:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .info-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Brain Hemorrhage Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <div class="logo">🧠 BrainCare AI</div>
+    </nav>
+
+    <div class="main-card">
+        <h1>Brain Hemorrhage Detection</h1>
+        <input type="file" id="imageUpload">
+        <button onclick="uploadImage()">Predict</button>
+        <p id="result"></p>
+    </div>
+
+    <section class="info-section">
+        <h2>Do you want to know more about the brain hemorrhage? Let me help you...</h2>
+        <div class="info-cards">
+            <div class="card"><h3>What is Brain Hemorrhage?</h3><p>It’s bleeding in or around the brain due to ruptured blood vessels.</p></div>
+            <div class="card"><h3>Symptoms</h3><p>Sudden headache, vision problems, weakness, confusion, seizures.</p></div>
+            <div class="card"><h3>Causes</h3><p>High blood pressure, trauma, aneurysms, blood disorders, or tumors.</p></div>
+            <div class="card"><h3>Diagnosis</h3><p>CT scan or MRI is used to detect bleeding in the brain.</p></div>
+            <div class="card"><h3>Prevention</h3><p>Control BP, avoid smoking/alcohol, wear helmets, regular checkups.</p></div>
+            <div class="card"><h3>Treatment</h3><p>It may involve surgery, medications, and intensive care monitoring.</p></div>
+        </div>
+    </section>
+
+    <section class="links-section">
+        <h2>Still confused? Let's check out some websites</h2>
+        <div class="links">
+            <a href="https://www.mayoclinic.org" target="_blank">Mayo Clinic</a>
+            <a href="https://www.webmd.com" target="_blank">WebMD</a>
+            <a href="https://www.healthline.com" target="_blank">Healthline</a>
+        </div>
+    </section>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
